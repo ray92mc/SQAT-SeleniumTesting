@@ -1,0 +1,622 @@
+{
+  "id": "63de7151-c52c-4b9b-9100-74602ec70efc",
+  "version": "2.0",
+  "name": "CA3_SwagLabsChrome",
+  "url": "https://www.saucedemo.com/inventory.html",
+  "tests": [{
+    "id": "a8f847dc-ee5a-4aa1-8f0a-ef0e41c60b2c",
+    "name": "test_login_fail",
+    "commands": [{
+      "id": "81467b0f-01c2-4fbc-a46a-bfeba207f64f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b28a1bdd-1d87-4284-98fb-eb8d6f42851a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47c8a234-7f02-44fe-9c7b-4b1462835bcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fc4d2b2-d00f-425c-bcaf-cc50c0ff5ebb",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "d105cfa7-8141-4f3a-b9ea-e9dbd19ca8d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "224cb534-7e25-4a1d-a85b-885612029c0d",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "incorrect"
+    }, {
+      "id": "5d0169ac-ec77-4616-961e-e43cfd41c36a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "486a11f3-acfa-4bc6-a150-899fab42e20a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1fa6b11-1c69-4b5e-b0cf-1069c40cdde9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd9eace-9c4b-4375-85b9-2ccf2c19e5de",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [
+        ["css=*[data-test=\"error\"]", "css:data-attr"],
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='login_button_container']/div/form/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Epic sadface: Username and password do not match any user in this service')]", "xpath:innerText"]
+      ],
+      "value": "Epic sadface: Username and password do not match any user in this service"
+    }, {
+      "id": "d6a94786-87c1-4bf6-a2a0-6e2cb3037243",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3f113ad-347c-46af-8cde-1e323e900c48",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.login_password",
+      "targets": [
+        ["css=.login_password", "css:finder"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "Password for all users:\\nsecret_sauce"
+    }]
+  }, {
+    "id": "7baaa064-174a-404f-80cb-3a6277d9958a",
+    "name": "test_login_success",
+    "commands": [{
+      "id": "dfea4974-7556-44ef-9373-726488b9cd14",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab573588-2b92-4d60-9809-a86fe58f0efc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba896188-5ace-4dd3-ae2b-f400745a14ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eadd2cd-ce8f-46a1-b339-352ee62a91dc",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "1c689349-e53f-4b19-baab-8948fc910026",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e29a039e-6016-4e3a-9287-eee477a7e1ca",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "e85532a6-791d-4073-a555-b47b0b4f7aa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9543f29-ce34-49cf-9fb0-18b682510023",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f951861-eaf0-4d98-adc1-64f575fdb9ee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product_label",
+      "targets": [
+        ["css=.product_label", "css:finder"],
+        ["xpath=//div[@id='inventory_filter_container']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "Products"
+    }, {
+      "id": "605ec73a-53ad-4fcb-a1c9-5a07c14afe8a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.footer_copy",
+      "targets": [
+        ["css=.footer_copy", "css:finder"],
+        ["xpath=//footer/div", "xpath:position"],
+        ["xpath=//div[contains(.,'© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy')]", "xpath:innerText"]
+      ],
+      "value": "© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy"
+    }]
+  }, {
+    "id": "a9580267-2ef1-4f89-bfab-ccb29bfc5250",
+    "name": "test_remove_from_cart_success",
+    "commands": [{
+      "id": "c53de933-3552-4f96-9a89-4b08a27a86c2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.saucedemo.com/inventory.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0402751a-8f1d-46e4-9524-125fcb626f93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3301909-db44-4eb0-ab28-c167b49a5a89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(3) .btn_primary",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .btn_primary", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6965ec43-7bc1-4d3e-bd66-c13f3eaf43be",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "b4ea7dc8-f01b-4ccf-9c3f-c6f869c2c280",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b73f817-b96a-4c57-913c-14fe6b93a122",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='cart_contents_container']/div/div/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "8e8a444b-61b9-4780-abf6-822f9608d2b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_button",
+      "targets": [
+        ["css=.cart_button", "css:finder"],
+        ["xpath=//div[@id='cart_contents_container']/div/div/div[3]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'REMOVE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe64f5c-2553-4836-ae8f-47d86d1c34f0",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b84ff725-56d2-42d1-b782-f8fc3ef9cdfe",
+    "name": "test_order_complete_success",
+    "commands": [{
+      "id": "8a00a355-c1d9-4da2-9133-1fbf7fa0a910",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.saucedemo.com/inventory.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9944db04-7e05-4dc0-8358-1551456e775a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340515b7-5b2d-4510-b8fd-c0dd77db2360",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(1) .btn_primary",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) .btn_primary", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ADD TO CART')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf9c1269-1d52-4ce6-92b7-f28d8e0ed291",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc2aa7bf-e969-4116-811d-439bfc6f64d8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.cart_quantity_label",
+      "targets": [
+        ["css=.cart_quantity_label", "css:finder"],
+        ["xpath=//div[@id='cart_contents_container']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": "QTY"
+    }, {
+      "id": "30089eb0-d3cc-46fb-b6ba-03151c0badd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CHECKOUT",
+      "targets": [
+        ["linkText=CHECKOUT", "linkText"],
+        ["css=.btn_action", "css:finder"],
+        ["xpath=//a[contains(text(),'CHECKOUT')]", "xpath:link"],
+        ["xpath=//div[@id='cart_contents_container']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './checkout-step-one.html')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'CHECKOUT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa67c3b4-7a2e-41d3-b880-141b189191fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"firstName\"]",
+      "targets": [
+        ["css=*[data-test=\"firstName\"]", "css:data-attr"],
+        ["id=first-name", "id"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "331013d2-69d7-4cc8-b789-0102a39fa259",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"firstName\"]",
+      "targets": [
+        ["css=*[data-test=\"firstName\"]", "css:data-attr"],
+        ["id=first-name", "id"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Firstname"
+    }, {
+      "id": "c098ed58-3f66-40f8-b24d-6eee75d4a784",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"lastName\"]",
+      "targets": [
+        ["css=*[data-test=\"lastName\"]", "css:data-attr"],
+        ["id=last-name", "id"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e188c91-312b-4b28-95dd-c05fdfae2ede",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"lastName\"]",
+      "targets": [
+        ["css=*[data-test=\"lastName\"]", "css:data-attr"],
+        ["id=last-name", "id"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "LastName"
+    }, {
+      "id": "f09012be-66b5-4728-a4f1-c7ce66127e8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"postalCode\"]",
+      "targets": [
+        ["css=*[data-test=\"postalCode\"]", "css:data-attr"],
+        ["id=postal-code", "id"],
+        ["css=#postal-code", "css:finder"],
+        ["xpath=//input[@id='postal-code']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92682db4-f921-4633-b381-938b6d470b89",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"postalCode\"]",
+      "targets": [
+        ["css=*[data-test=\"postalCode\"]", "css:data-attr"],
+        ["id=postal-code", "id"],
+        ["css=#postal-code", "css:finder"],
+        ["xpath=//input[@id='postal-code']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0000"
+    }, {
+      "id": "4bc2b399-6231-4e1c-a756-038cf8a1dcb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_primary",
+      "targets": [
+        ["css=.btn_primary", "css:finder"],
+        ["xpath=//input[@value='CONTINUE']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7faf7dda-bf9c-4a59-bf93-ab2bfbdb02fe",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e8e79f3-84b3-4fdd-91e7-0b3b9adeaa4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=FINISH",
+      "targets": [
+        ["linkText=FINISH", "linkText"],
+        ["css=.btn_action", "css:finder"],
+        ["xpath=//a[contains(text(),'FINISH')]", "xpath:link"],
+        ["xpath=//div[@id='checkout_summary_container']/div/div[2]/div[8]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './checkout-complete.html')]", "xpath:href"],
+        ["xpath=//div[8]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'FINISH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "716a1cd0-ce90-4173-a258-8a93b93644d5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.complete-header",
+      "targets": [
+        ["css=.complete-header", "css:finder"],
+        ["xpath=//div[@id='checkout_complete_container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'THANK YOU FOR YOUR ORDER')]", "xpath:innerText"]
+      ],
+      "value": "THANK YOU FOR YOUR ORDER"
+    }]
+  }, {
+    "id": "ae56262b-cb2a-436a-b747-490007ae1407",
+    "name": "test_sort_product_by_price_success",
+    "commands": [{
+      "id": "d37b9b29-8104-4e39-9558-2e74d10e62f7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.saucedemo.com/inventory.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce934539-0954-4b7f-bfe6-9fdb80253e45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x837",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da989725-e5c6-4451-b443-e9757678fe24",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product_label",
+      "targets": [
+        ["css=.product_label", "css:finder"],
+        ["xpath=//div[@id='inventory_filter_container']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "Products"
+    }, {
+      "id": "0faa703a-825e-40ad-ad28-3fb3d6fd2775",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_sort_container",
+      "targets": [
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='inventory_filter_container']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6617ee5-444a-4a5a-903b-51d5335ba13e",
+      "comment": "",
+      "command": "select",
+      "target": "css=.product_sort_container",
+      "targets": [],
+      "value": "label=Price (low to high)"
+    }, {
+      "id": "d36238c7-e886-4e65-b294-544fa42df0f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_sort_container",
+      "targets": [
+        ["css=.product_sort_container", "css:finder"],
+        ["xpath=//div[@id='inventory_filter_container']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7edae0b9-cc09-44ee-b525-965e2787463b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": "Swag Labs"
+    }, {
+      "id": "aea302b0-cbec-4ad3-aba4-7df9fdb8e0af",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.footer_copy",
+      "targets": [],
+      "value": "© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy"
+    }]
+  }],
+  "suites": [{
+    "id": "d691d1ec-d021-4872-a609-0d6c717b1777",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a8f847dc-ee5a-4aa1-8f0a-ef0e41c60b2c"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
